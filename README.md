@@ -5,7 +5,7 @@ Web application and mix-and-match game for Thai language learning
 	-Created animated cards using CSS 
   -Used Javascript to implement timeout and score-tracking functionality
   
-  ![ ](Animated GIF-downsized.gif)
+  ![ ](./Animated GIF-downsized.gif)
 
 
 ### How the app works
