@@ -5,8 +5,7 @@ Web application and mix-and-match game for Thai language learning
 	-Created animated cards using CSS 
   -Used Javascript to implement timeout and score-tracking functionality
 
-
-
+![](thai-card.gif)
 ### How the app works
 * To run the app, first fork and clone down this repo to your local device.
 
