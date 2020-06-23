@@ -4,8 +4,7 @@ Web application and mix-and-match game for Thai language learning
   -Utilized Ruby on Rails to store data 
 	-Created animated cards using CSS 
   -Used Javascript to implement timeout and score-tracking functionality
-  
-  ![ ](thai-card.gif)
+
 
 
 ### How the app works
