@@ -1,5 +1,3 @@
-console.log('Hit')
-
 const linkImage = document.querySelector('.imageBackground')
 
 // const imageclick = document.createElement('image')
