@@ -9,16 +9,16 @@ fetch(cards)
 .then(res => res.json())
 .then(cards => {
         cards.forEach(card => {
-            const div_frontcard = document.createElement('div')
-        const div_backcard = document.createElement('div')
+        const div_frontCard = document.createElement('div')
+        const div_backCard = document.createElement('div')
         const li = document.createElement('li')
         const p = document.createElement('p')
         const img = document.createElement('img')
         const speaker = document.createElement('img')
         
         
-        div_frontcard.className = "card__face card__face--front"
-        div_backcard.className = "card__face card__face--back"
+        div_frontCard.className = "card__face card__face--front"
+        div_backCard.className = "card__face card__face--back"
         speaker.id= 'speaker-butt'
         li.className = 'alphabet-card'
         p.innerText = card.description
@@ -38,9 +38,9 @@ fetch(cards)
             })
         })
         
-        div_frontcard.appendChild(img)
-        div_backcard.append(p, speaker)
-        li.append(div_frontcard, div_backcard)
+        div_frontCard.appendChild(img)
+        div_backCard.append(p, speaker)
+        li.append(div_frontCard, div_backCard)
         cardsContainer.appendChild(li)
         
     })
@@ -52,15 +52,15 @@ function playsound(card){
     }
     
     const butt = document.querySelector('.button')
-    const nextpageButt = document.createElement('button')
+    const nextPageButt = document.createElement('button')
     const buttContainer = document.createElement('div')
     
     
     buttContainer.id = 'buttContainer'
-    nextpageButt.id = 'nextpageButt'
-    nextpageButt.innerHTML = `<a href="flashcardgame.html?id">Play game</a>`
+    nextPageButt.id = 'nextPageButt'
+    nextPageButt.innerHTML = `<a href="flashcardgame.html?id">Play game</a>`
     
-    buttContainer.appendChild(nextpageButt)
+    buttContainer.appendChild(nextPageButt)
     butt.appendChild(buttContainer)
 
     function unFlipCards(){
