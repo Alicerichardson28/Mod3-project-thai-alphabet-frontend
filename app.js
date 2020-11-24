@@ -58,7 +58,7 @@ function playsound(card){
     
     buttContainer.id = 'buttContainer'
     nextPageButt.id = 'nextPageButt'
-    nextPageButt.innerHTML = `<a href="flashcardgame.html?id">Play game</a>`
+    nextPageButt.innerHTML = `<a href="flashcardgame.html?id">Let's play game</a>`
     
     buttContainer.appendChild(nextPageButt)
     butt.appendChild(buttContainer)

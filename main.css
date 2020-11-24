@@ -12,7 +12,8 @@
     justify-content: center;
     perspective: 500px;
     list-style-type: none; 
-    
+    padding: 0;
+
     transition: transform 1s;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
@@ -29,12 +30,11 @@
     box-shadow: 0 6px 15px rgb(187, 186, 186);
     height: max-content;
     grid-gap: 10px;
-
 }
 
 .alphabet-card img {
-    padding: 2rem;
-    align-items: center;
+    margin: 20px;
+    justify-content: center;
     width: 77%;
 } 
 
@@ -52,9 +52,6 @@
   pointer-events:all;
 } 
 
-
-
-  
 .alphabet-card{
   transition: transform 1s;
   transform-style: preserve-3d;
@@ -67,9 +64,10 @@
 }
 
 .card__face {
+  margin: 0 auto;
   text-align: center;
   font-weight: bold;
-  font-size: 40px;
+  /* font-size: 40px; */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -85,7 +83,7 @@
 
 .button {
    font-size: 1em;
-   padding-left: 70rem;
+   padding-left: 83em;
    padding-top: 4rem;
    width: 10%;
   }
@@ -93,7 +91,7 @@
 #nextPageButt {
   box-sizing: border-box;
   box-shadow: 0 6px 15px rgb(199, 198, 198);
-  width: 6rem;
+  width: 8rem;
   height: 2rem;
   border-radius: 0.12em;
   color:#FFFFFF
