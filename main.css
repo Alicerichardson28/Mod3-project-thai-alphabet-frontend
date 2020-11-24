@@ -1,10 +1,69 @@
 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
 @media only screen and (max-width: 2000px) {
-  body {
-    background-color: rgb(243, 244, 245);
+  .title-container {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(207, 207, 207);
   }
 
-  .card-container {
+  .title {
+    text-align: center;
+    margin-top: 0.8em;
+    font-size: 30px;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+
+  .card-container{
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 80px;
@@ -19,87 +78,92 @@
     transition: all 0.5s ease;
     cursor: pointer; 
   }
-}
 
-.alphabet-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 15rem;
-    height: 10rem;
-    box-shadow: 0 6px 15px rgb(187, 186, 186);
-    height: max-content;
-    grid-gap: 10px;
-}
+  .alphabet-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 15rem;
+      height: 10rem;
+      box-shadow: 0 6px 15px rgb(187, 186, 186);
+      height: max-content;
+      grid-gap: 10px;
+  }
 
-.alphabet-card img {
-    margin: 20px;
-    justify-content: center;
-    width: 77%;
-} 
+  .alphabet-card img {
+      margin: 20px;
+      justify-content: center;
+      width: 77%;
+  } 
 
-.card__face--back p {
-   margin-top: 4.5em;
-    font-size: x-large;
-    width: 100%;
-    height: 20px;
-} 
+  .card__face--back p {
+    margin-top: 4.5em;
+      font-size: x-large;
+      width: 100%;
+      height: 20px;
+  } 
 
-#speaker-butt{
-  width: 30%;
-  pointer-events:all;
-} 
+  #speaker-butt{
+    width: 30%;
+    pointer-events:all;
+  } 
 
-.alphabet-card{
-  transition: transform 1s;
-  transform-style: preserve-3d;
-  cursor: pointer;
-  position: relative;
-}
+  .alphabet-card{
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
 
-.alphabet-card.flip {
-  transform: rotateY(180deg);
-}
+  .alphabet-card.flip {
+    transform: rotateY(180deg);
+  }
 
-.card__face {
-  margin: 0 auto;
-  text-align: center;
-  font-weight: bold;
-  /* font-size: 40px; */
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
+  .card__face {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
 
-.card__face--back {
-  position: absolute;
-  transform: rotateY(180deg);
-}
+  .card__face--back {
+    position: absolute;
+    transform: rotateY(180deg);
+  }
 
-.card__face--back #speaker-butt{
-  width: 3rem;
-}
+  .card__face--back #speaker-butt{
+    width: 3rem;
+  }
 
-.button {
-   font-size: 1em;
-   padding-left: 83em;
-   padding-top: 4rem;
-   width: 10%;
+  .button {
+    padding-left: 79em;
+    padding-top: 7rem;
   }
   
-#nextPageButt {
-  box-sizing: border-box;
+  #nextPageButt {
+  font-family: 'Noto Sans JP', sans-serif;
   box-shadow: 0 6px 15px rgb(199, 198, 198);
-  width: 8rem;
-  height: 2rem;
-  border-radius: 0.12em;
-  color:#FFFFFF
-}
 
-#nextPageButt a {
-  text-decoration: none;
-  color: black;
-}
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid rgb(5, 5, 5);
+  border-radius: 0.6em;
+  color: rgb(12, 12, 12);
+  cursor: pointer;
+  line-height: 1;
+  padding:15px;
+  text-transform: uppercase;
+  }
 
-.disabled {
-  pointer-events: none;
+  #nextPageButt a {
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    font-size: 17px;
+  }
+
+  .disabled {
+    pointer-events: none;
+  }
 }
