@@ -65,16 +65,15 @@ table {
 }
 
 .game-container {
-    display: flex;
-    justify-content: center;
     font-size: 1.5em;
     margin-top: 2.5em;
-    margin-left: 3em;
 }
 
 .game-info-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
     font-size: 1.5em;
     width: 60%;
     text-shadow: 1px 1px rgb(114, 113, 113);
@@ -92,7 +91,6 @@ table {
 }
 
 .card__face {
-  
     text-align: center;
     font-weight: bold;
     font-size: 40px;
@@ -141,7 +139,7 @@ table {
     text-transform: uppercase;
   }
 
-  .game-info {
+  .game-info-time {
     width: 30%;
   }
   
