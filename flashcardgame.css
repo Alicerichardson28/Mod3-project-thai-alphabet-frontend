@@ -1,14 +1,75 @@
-html {
-	box-sizing: border-box;
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@media only screen and (max-width: 2000px) {
+
+
+
+.title {
+  margin-top: 2em;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .container{
     text-align: center;
     font-weight: normal;
     text-align: center;
-    font-size: 3em;
+    font-size: 4em;
     font-family: cursive;
-    text-shadow: 3px 3px rgb(51, 51, 51);
+    text-shadow: 3px 3px rgb(199, 199, 199);
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    margin-top: 2.5em;
+    margin-left: 3em;
 }
 
 .game-info-container {
@@ -19,12 +80,6 @@ html {
     text-shadow: 1px 1px rgb(114, 113, 113);
  }
 
-.game-container {
-    display: flex;
-    justify-content: center;
-    font-size: 1.5em;
-
-}
 
 .card-container{
     display: grid;
@@ -69,6 +124,26 @@ html {
     box-shadow: 0 6px 15px rgb(187, 186, 186);
     
   }
+
+  #start-game {
+    font-family: 'Noto Sans JP', sans-serif;
+    box-shadow: 0 6px 15px rgb(199, 198, 198);
+
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid rgb(5, 5, 5);
+    border-radius: 0.6em;
+    color: rgb(12, 12, 12);
+    cursor: pointer;
+    line-height: 1;
+    padding:15px;
+    text-transform: uppercase;
+  }
+
+  .game-info {
+    width: 30%;
+  }
   
   #game-card.flip {
     transform: rotateY(180deg);
@@ -87,5 +162,5 @@ html {
     pointer-events: none;
   }
 
-
+}
  
