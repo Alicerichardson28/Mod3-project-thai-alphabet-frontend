@@ -38,12 +38,10 @@
     width: 77%;
 } 
 
-.alphabet-card p {
-    padding: 3rem;
-    align-items: center;
-    margin-top: -2rem;
+.card__face--back p {
+   margin-top: 4.5em;
     font-size: x-large;
-    width: 40%;
+    width: 100%;
     height: 20px;
 } 
 
@@ -77,8 +75,8 @@
   transform: rotateY(180deg);
 }
 
-.card__face--back.speakerbutt{
-  width: 10rem;
+.card__face--back #speaker-butt{
+  width: 3rem;
 }
 
 .button {
