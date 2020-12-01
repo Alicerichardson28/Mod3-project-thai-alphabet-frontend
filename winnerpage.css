@@ -2,27 +2,33 @@
 
 
 body {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; 
-    padding-top: 10rem; 
-    padding-bottom: 10rem; 
 }
 
 body img{
-    width: 50%;
+    float: left;
+    width: 30%;
+    margin-right: 10rem;
     box-shadow: 0 6px 15px rgb(143, 140, 140);
 }
 
 
 body h1{
-  font-family: 'Noto Sans JP', sans-serif;
+    float: right;
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 5rem;
     color: rgb(47, 48, 47); 
     text-shadow: 3px 3px rgb(216, 216, 216);
 }
 
+#content {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+}
 
 
 
