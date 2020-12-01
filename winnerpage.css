@@ -1,15 +1,5 @@
-/* .imageBackground {
-    display: flex;
-    justify-content: center; 
-    padding-top: 10rem; 
-    padding-bottom: 10rem;  
-} */
-/* 
-.imageBackground img {
-    box-shadow: 0 6px 15px rgb(143, 140, 140);
-    width: 70%;
-    height: 50%;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
 
 body {
     display: flex;
@@ -21,19 +11,16 @@ body {
 }
 
 body img{
-    width: 70%;
+    width: 50%;
     box-shadow: 0 6px 15px rgb(143, 140, 140);
-    width: 70%;
-    height: 50%;
 }
 
 
 body h1{
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Satisfy', cursive;
+  font-family: 'Noto Sans JP', sans-serif;
     font-size: 5rem;
     color: rgb(47, 48, 47); 
-    text-shadow: 3px 3px rgb(250, 237, 57);
+    text-shadow: 3px 3px rgb(216, 216, 216);
 }
 
 
