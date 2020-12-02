@@ -36,7 +36,7 @@ fetch(cards)
             unFlipCards()
 
             speaker.addEventListener("click",()=>{
-                playsound(card)  
+                playSound(card)  
             })
         })
         
@@ -48,7 +48,7 @@ fetch(cards)
     })
 })
 
-function playsound(card){
+function playSound(card){
     const audio = new Audio(card.radio_url)
     audio.play()
     }
