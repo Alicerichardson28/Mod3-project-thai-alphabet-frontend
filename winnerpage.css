@@ -23,7 +23,7 @@
     .winner{
         width: 200%;
         margin-top: 2em;
-        margin-left: 15em;
+        margin-left: 13em;
         font-family: 'Noto Sans JP', sans-serif;
         font-size: 4rem;
         color: rgb(47, 48, 47); 
@@ -31,10 +31,10 @@
     }
 
     #content {
-        padding-top: 50%;
+        margin-left: 13em;
+        padding-top: 40%;
         font-family: 'Noto Sans JP', sans-serif;
         font-size: 20px;
-        margin-left: 10em;
         width: 100%;
     }
 }
