@@ -1,35 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
 
-body {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    body img{
+        margin-top: 5em;
+        float: left;
+        width: 500px;
+        margin-left: 22em;
+        box-shadow: 0 6px 15px rgb(143, 140, 140);
+    }
+
+
+    .winner{
+        width: 200%;
+        margin-top: 2em;
+        margin-left: 15em;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 4rem;
+        color: rgb(47, 48, 47); 
+        text-shadow: 3px 3px rgb(216, 216, 216);
+    }
+
+    #content {
+        padding-top: 50%;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 20px;
+        margin-left: 10em;
+        width: 100%;
+    }
 }
 
-body img{
-    float: left;
-    width: 20%;
-    margin-right: 10rem;
-    box-shadow: 0 6px 15px rgb(143, 140, 140);
-}
+
+@media only screen and (max-width: 2000px) {
+    body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    body img{
+        margin-top: 5em;
+        float: left;
+        width: 20%;
+        margin-right: 10rem;
+        box-shadow: 0 6px 15px rgb(143, 140, 140);
+    }
 
 
-body h1{
-    float: right;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 5rem;
-    color: rgb(47, 48, 47); 
-    text-shadow: 3px 3px rgb(216, 216, 216);
-}
+    body h1{
+        float: right;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 5rem;
+        color: rgb(47, 48, 47); 
+        text-shadow: 3px 3px rgb(216, 216, 216);
+    }
 
-#content {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 20px;
-    margin-left: 10em;
-    width: 100%;
+    #content {
+        margin-top: 5em;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 20px;
+        margin-left: 10em;
+        width: 100%;
+    }
 }
 
 
