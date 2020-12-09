@@ -11,7 +11,7 @@ body {
 
 body img{
     float: left;
-    width: 30%;
+    width: 20%;
     margin-right: 10rem;
     box-shadow: 0 6px 15px rgb(143, 140, 140);
 }
@@ -27,7 +27,9 @@ body h1{
 
 #content {
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
+    margin-left: 10em;
+    width: 100%;
 }
 
 
