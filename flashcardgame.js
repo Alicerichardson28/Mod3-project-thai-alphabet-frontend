@@ -23,12 +23,12 @@ let deck = [
     {letter:"choChing",image_url:"https://i.ibb.co/yQCvDS8/8.png"},
 ]
 
-  function shuffle(array) {
+  const shuffle = (array) =>{
       array.sort(() => Math.random() - 0.5);
       return array
     }
 
-  function unFlipCards(){
+  const unFlipCards = () =>{
     setTimeout(() => {
       openedCards[0].classList.toggle("flip")
       openedCards[1].classList.toggle("flip")
@@ -40,7 +40,7 @@ let deck = [
     },1100);
   }
     
-  function matchedCard(){
+  const matchedCard = () =>{
     setTimeout(() => {
     matchedCards.push(openedCards[0],openedCards[1])
     openedCards[0].classList.add("match")
@@ -57,19 +57,21 @@ let deck = [
   }
 
 
+  // timer function 
  const timer = document.querySelector('#time-remaining')
+
  let minute = 0
  let second = 0
-  function startGame() {
-    interval = setInterval(function(){
+
+ const startGame = () =>{
+    interval = setInterval(() => {
       timer.innerHTML =`${minute} mins ${second} secs`;
       second++;
-      if(second == 120) {
+      if(second === 120) {
         clearInterval(interval)
-        minute++;
+        minute = 0;
         second = 0;
       startGame()
-      
       }
     },1000)
 
