@@ -1,33 +1,43 @@
 const cardContainer = document.querySelector('.card-container')
 const cards = ('http://localhost:3000/cards')
 
+//start game button
+
+const startButts = document.querySelector('#start-game')
+startButts.addEventListener('click',() => {
+    startGame()
+})
+
+
 let matchedCards = []
 let openedCards = []
 
 let deck = [
-    {letter:"korKai", image_url:"https://i.ibb.co/BNkYZs7/1.png"},
-    {letter:"korKai", image_url:"https://i.ibb.co/BNkYZs7/1.png"},
-    {letter:"khoKhai", image_url:"https://i.ibb.co/T1X8Cv3/2.png"},
-    {letter:"khoKhai", image_url:"https://i.ibb.co/T1X8Cv3/2.png"},
-    {letter:"khoKhuat",image_url:"https://i.ibb.co/vVKYWQN/3.png"},
-    {letter:"khoKhuat",image_url:"https://i.ibb.co/vVKYWQN/3.png"},
-    {letter:"khoKhon",image_url:"https://i.ibb.co/9qLq4qX/4.png"},
-    {letter:"khoKhon",image_url:"https://i.ibb.co/9qLq4qX/4.png"},
-    {letter:"khoRaKhang",image_url:"https://i.ibb.co/z7b6rSP/5.png"},
-    {letter:"khoRaKhang",image_url:"https://i.ibb.co/z7b6rSP/5.png"},
-    {letter:"ngoNguu",image_url:"https://i.ibb.co/QCyBHD4/6.png"},
-    {letter:"ngoNguu",image_url:"https://i.ibb.co/QCyBHD4/6.png"},
-    {letter:"jorJan",image_url:"https://i.ibb.co/ZMwrr4W/7.png"},
-    {letter:"jorJan",image_url:"https://i.ibb.co/ZMwrr4W/7.png"},
-    {letter:"choChing",image_url:"https://i.ibb.co/yQCvDS8/8.png"},
-    {letter:"choChing",image_url:"https://i.ibb.co/yQCvDS8/8.png"},
+  {letter:"korKai", image_url:"https://i.ibb.co/BNkYZs7/1.png"},
+  {letter:"korKai", image_url:"https://i.ibb.co/BNkYZs7/1.png"},
+  {letter:"khoKhai", image_url:"https://i.ibb.co/T1X8Cv3/2.png"},
+  {letter:"khoKhai", image_url:"https://i.ibb.co/T1X8Cv3/2.png"},
+  {letter:"khoKhuat",image_url:"https://i.ibb.co/vVKYWQN/3.png"},
+  {letter:"khoKhuat",image_url:"https://i.ibb.co/vVKYWQN/3.png"},
+  {letter:"khoKhon",image_url:"https://i.ibb.co/9qLq4qX/4.png"},
+  {letter:"khoKhon",image_url:"https://i.ibb.co/9qLq4qX/4.png"},
+  {letter:"khoRaKhang",image_url:"https://i.ibb.co/z7b6rSP/5.png"},
+  {letter:"khoRaKhang",image_url:"https://i.ibb.co/z7b6rSP/5.png"},
+  {letter:"ngoNguu",image_url:"https://i.ibb.co/QCyBHD4/6.png"},
+  {letter:"ngoNguu",image_url:"https://i.ibb.co/QCyBHD4/6.png"},
+  {letter:"jorJan",image_url:"https://i.ibb.co/ZMwrr4W/7.png"},
+  {letter:"jorJan",image_url:"https://i.ibb.co/ZMwrr4W/7.png"},
+  {letter:"choChing",image_url:"https://i.ibb.co/yQCvDS8/8.png"},
+  {letter:"choChing",image_url:"https://i.ibb.co/yQCvDS8/8.png"},
 ]
 
+// shuffle function 
   const shuffle = (array) =>{
-      array.sort(() => Math.random() - 0.5);
-      return array
-    }
+    array.sort(() => Math.random() - 0.5);
+    return array
+  }
 
+// unFlipCard function 
   const unFlipCards = () =>{
     setTimeout(() => {
       openedCards[0].classList.toggle("flip")
@@ -40,12 +50,13 @@ let deck = [
     },1100);
   }
     
+// matchCard function + set Timeout function
   const matchedCard = () =>{
     setTimeout(() => {
-    matchedCards.push(openedCards[0],openedCards[1])
-    openedCards[0].classList.add("match")
-    openedCards[1].classList.add("match")
-    openedCards = [] 
+      matchedCards.push(openedCards[0],openedCards[1])
+      openedCards[0].classList.add("match")
+      openedCards[1].classList.add("match")
+      openedCards = [] 
     if (matchedCards.length === 16){
       setTimeout(() => window.location.href = "http://localhost:3001/winnerpage.html",1100)
     }
@@ -56,9 +67,8 @@ let deck = [
     openedCards[i].addEventListener("click", displayCard)
   }
 
-
-  // timer function 
- const timer = document.querySelector('#time-remaining')
+// timer function 
+const timer = document.querySelector('#time-remaining')
 
  let minute = 0
  let second = 0
@@ -76,6 +86,7 @@ let deck = [
     },1000)
 
 
+  // display card and shuffleDeck
     const gameCardContainer= document.querySelector('.card-container')
     gameCardContainer.innerHTML =''
 
@@ -87,7 +98,8 @@ let deck = [
       const li = document.createElement('li')
       const frontCardImg = document.createElement('img')
       const backCardImg = document.createElement('img')
-  
+
+
       li.dataset.letter = card.letter
       li.id = "game-card"
       cardFace.className = "card__face card__face--front"
@@ -115,11 +127,14 @@ let deck = [
       })
   }
 
-    const startButts = document.querySelector('#start-game')
-    startButts.addEventListener('click',() => {
-        startGame()
-  })
+//track score
+  // const score = document.getElementById('#flips')
 
+  // function moveCounter() {
+  //   if(matchedCard >= 0){
+  //     score++
+  //   }
+  // }
 
 
 
