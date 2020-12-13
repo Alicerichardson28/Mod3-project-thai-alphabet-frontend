@@ -1,5 +1,3 @@
-console.log('Hit')
-
 const cardContainer = document.querySelector('.card-container')
 const cards = ('http://localhost:3000/cards')
 
@@ -75,51 +73,6 @@ let deck = [
       }
     },1000)
 
-// const counter = document.querySelector('#flips')
-// let moves = 0
-//   function moveCounter() {
-//     moves++;
-//     counter.innerHTML = `${moves} move(s)`;
-
-  //   if(moves == 1) {
-  //       second = 0;
-  //       minute = 0;
-  //       hour = 0;
-  //       startTimer();
-  //   }
-
-  //   if(moves > 8 && moves <= 12) {
-  //       for(let i=0; i<5; i++) {
-  //           starElementsArray[i].opacity = 1; 
-  //       }
-  //   } else if(moves > 12 && moves <= 16) {
-  //       for(let i=0; i<5; i++) {
-  //           if(i > 3) {
-  //               starElementsArray[i].style.opacity = 0.1;
-  //           }
-  //       }
-  //   } else if(moves > 16 && moves <= 20) {
-  //       for(let i=0; i<5; i++) {
-  //           if(i > 2) {
-  //               starElementsArray[i].style.opacity = 0.1;
-  //           }
-  //       }
-  //   } else if(moves > 20 && moves <= 24) {
-  //       for(let i=0; i<5; i++) {
-  //           if(i > 1) {
-  //               starElementsArray[i].style.opacity = 0.1;
-  //           }
-  //       }
-  //   } else if(moves > 24){
-  //       for(let i=0; i<5; i++) {
-  //           if(i > 0) {
-  //               starElementsArray[i].style.opacity = 0.1;
-  //           }
-  //       }
-  //   }
-  // }
-
-
 
     const gameCardContainer= document.querySelector('.card-container')
     gameCardContainer.innerHTML =''
@@ -130,16 +83,16 @@ let deck = [
       const cardFace = document.createElement('div')
       const cardBack = document.createElement('div')
       const li = document.createElement('li')
-      const frontCardimg = document.createElement('img')
-      const backCardimg = document.createElement('img')
+      const frontCardImg = document.createElement('img')
+      const backCardImg = document.createElement('img')
   
       li.dataset.letter = card.letter
       li.id = "game-card"
       cardFace.className = "card__face card__face--front"
       cardBack.className = "card__face card__face--back"
-      frontCardimg.id = "frontCard"
-      frontCardimg.src = "./picture/couple.jpg"
-      backCardimg.src = card.image_url
+      frontCardImg.id = "frontCard"
+      frontCardImg.src = "./picture/couple.jpg"
+      backCardImg.src = card.image_url
   
       li.addEventListener('click',()=>{
           li.classList.toggle('flip') 
@@ -153,8 +106,8 @@ let deck = [
             }
           } 
         })
-        cardFace.appendChild(frontCardimg)
-        cardBack.appendChild(backCardimg)
+        cardFace.appendChild(frontCardImg)
+        cardBack.appendChild(backCardImg)
         li.append(cardFace, cardBack)
         gameCardContainer.appendChild(li)
       })
