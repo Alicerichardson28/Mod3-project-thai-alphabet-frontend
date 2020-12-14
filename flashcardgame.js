@@ -52,13 +52,12 @@ let deck = [
     
 // matchCard function + set Timeout function
 let score = document.querySelector('#flips')
-let totalScore = 0
+let totalScore = 1
 
 const matchedCard = () =>{
   setTimeout(() => {
     matchedCards.push(openedCards[0],openedCards[1])
-    console.log(matchedCards)
-    if(matchedCards.length >= 2){
+    if(matchedCards.length >= 1){
       score.innerHTML = `${totalScore}`; ++totalScore
     }
     openedCards[0].classList.add("match")
