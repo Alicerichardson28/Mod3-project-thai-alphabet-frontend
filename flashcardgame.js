@@ -51,10 +51,17 @@ let deck = [
   }
     
 // matchCard function + set Timeout function
-  const matchedCard = () =>{
-    setTimeout(() => {
-      matchedCards.push(openedCards[0],openedCards[1])
-      openedCards[0].classList.add("match")
+let score = document.querySelector('#flips')
+let totalScore = 0
+
+const matchedCard = () =>{
+  setTimeout(() => {
+    matchedCards.push(openedCards[0],openedCards[1])
+    console.log(matchedCards)
+    if(matchedCards.length >= 2){
+      score.innerHTML = `${totalScore}`; ++totalScore
+    }
+    openedCards[0].classList.add("match")
       openedCards[1].classList.add("match")
       openedCards = [] 
     if (matchedCards.length === 16){
@@ -98,6 +105,7 @@ const timer = document.querySelector('#time-remaining')
       const li = document.createElement('li')
       const frontCardImg = document.createElement('img')
       const backCardImg = document.createElement('img')
+
 
 
       li.dataset.letter = card.letter
