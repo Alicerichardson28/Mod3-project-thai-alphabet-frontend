@@ -37,6 +37,28 @@
         font-size: 20px;
         width: 100%;
     }
+    .btn-play-again{
+        font-family: 'Noto Sans JP', sans-serif;
+        box-shadow: 0 6px 15px rgb(199, 198, 198);
+
+        box-sizing: border-box;
+        appearance: none;
+        background-color: transparent;
+        border: 2px solid rgb(5, 5, 5);
+        border-radius: 0.6em;
+        color: rgb(12, 12, 12);
+        cursor: pointer;
+        line-height: 1;
+        padding:15px;
+        margin-left: 22em;
+        text-transform: uppercase;
+    }
+
+    .btn-play-again a {
+        text-decoration: none;
+        color: rgb(10, 10, 10);
+        font-size: 14px;
+    }
 }
 
 
@@ -86,6 +108,12 @@
         line-height: 1;
         padding:15px;
         text-transform: uppercase;
+    }
+
+    .btn-play-again a {
+        text-decoration: none;
+        color: rgb(10, 10, 10);
+        font-size: 14px;
     }
 }
 
