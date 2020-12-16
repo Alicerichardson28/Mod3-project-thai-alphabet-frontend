@@ -48,7 +48,7 @@ fetch(cards)
     })
 })
 
-function playSound(card){
+ playSound = (card) => {
     const audio = new Audio(card.radio_url)
     audio.play()
     }
