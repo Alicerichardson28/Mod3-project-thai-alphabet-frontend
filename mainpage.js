@@ -65,7 +65,7 @@ fetch(cards)
     buttContainer.appendChild(nextPageButt)
     butt.appendChild(buttContainer)
 
-    function unFlipCards(){
+     unFlipCards = () => {
         setTimeout(() => {
           openedCards[0].classList.toggle("flip")
           openedCards[1].classList.toggle("flip")
