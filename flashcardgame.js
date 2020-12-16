@@ -134,14 +134,6 @@ const timer = document.querySelector('#time-remaining')
       })
   }
 
-//track score
-  // const score = document.getElementById('#flips')
-
-  // function moveCounter() {
-  //   if(matchedCard >= 0){
-  //     score++
-  //   }
-  // }
 
 
 
