@@ -79,7 +79,7 @@ const timer = document.querySelector('#time-remaining')
  let minute = 0
  let second = 0
 
- const startGame = () =>{
+  startGame = () =>{
     interval = setInterval(() => {
       timer.innerHTML =`${minute} mins ${second} secs`;
       second++;
