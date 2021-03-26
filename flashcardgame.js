@@ -73,7 +73,7 @@ const matchedCard = () =>{
     openedCards[i].addEventListener("click", displayCard)
   }
 
-// timer function 
+// timer and start game function 
 const timer = document.querySelector('#time-remaining')
 
  let minute = 0
