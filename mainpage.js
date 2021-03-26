@@ -5,7 +5,7 @@ const id = params.get('id')
 
 
 const cardsContainer = document.querySelector('.card-container')
-const cards = ('http://localhost:3000/cards')
+const cards = ('https://thai-alphabet-backend.herokuapp.com/cards')
 
 fetch(cards)
 .then(res => res.json())
