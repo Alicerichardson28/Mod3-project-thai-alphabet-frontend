@@ -1,7 +1,7 @@
 
 
-const params = new URLSearchParams(window.location.search)
-const id = params.get('id')
+// const params = new URLSearchParams(window.location.search)
+// const id = params.get('id')
 
 
 const cardsContainer = document.querySelector('.card-container')
