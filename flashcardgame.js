@@ -1,5 +1,5 @@
 const cardContainer = document.querySelector('.card-container')
-const cards = ('https://thai-alphabet-backend.herokuapp.com/cards')
+const cards = 'https://thai-alphabet-backend.herokuapp.com/cards'
 
 //start game button
 

@@ -1,11 +1,9 @@
-
-
 // const params = new URLSearchParams(window.location.search)
 // const id = params.get('id')
 
 
 const cardsContainer = document.querySelector('.card-container')
-const cards = ('https://thai-alphabet-backend.herokuapp.com/cards')
+const cards = 'https://thai-alphabet-backend.herokuapp.com/cards'
 
 fetch(cards)
 .then(res => res.json())
