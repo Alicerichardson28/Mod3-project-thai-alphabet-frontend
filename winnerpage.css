@@ -115,6 +115,48 @@
         color: rgb(10, 10, 10);
         font-size: 14px;
     }
+    @media only screen and (max-width: 768px) {
+        .winner-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .img-winnerPage {
+            margin: 0;
+            width: 40%;
+        }
+        #content {
+            margin: 0;
+            margin-left: 20px;
+            margin-top: 5em;
+            font-size: 16px;
+        }
+        .btn-play-again{
+            margin-top: 30px;
+        }        
+    }
+    @media only screen and (max-width: 1050px) {
+        .winner-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .img-winnerPage {
+            margin: 0;
+            width: 40%;
+        }
+        #content {
+            margin: 0;
+            margin-left: 20px;
+            margin-top: 5em;
+            font-size: 16px;
+        }
+        .btn-play-again{
+            margin-top: 30px;
+        }        
+    }
 }
 
 
