@@ -1,13 +1,13 @@
 const cardContainer = document.querySelector('.card-container')
 const cards = 'https://thai-alphabet-backend.herokuapp.com/cards'
 
-//start game button
 
-const startButts = document.querySelector('#start-game')
-startButts.addEventListener('click',() => {
-    startGame()
-})
+// //start game button
 
+// const startButts = document.querySelector('#start-game')
+// startButts.addEventListener('click',() => {
+//     startGame()
+// })
 
 let matchedCards = []
 let openedCards = []
@@ -61,7 +61,13 @@ shuffleDeck.map(card =>{
   backCardImg.src = card.image_url
   backCardImg.id = "backCard"
 
-  li.addEventListener('click',()=>{
+//start game button
+  const startButts = document.querySelector('#start-game')
+  startButts.addEventListener('click',() => {
+      startGame()
+  })
+
+  let flipCard = li.addEventListener('click',()=>{
       li.classList.toggle('flip') 
       li.classList.add('disabled') 
       openedCards.push(li)
@@ -78,6 +84,7 @@ shuffleDeck.map(card =>{
     li.append(cardFace, cardBack)
     gameCardContainer.appendChild(li)
   })
+
 
 // unFlipCard function 
   const unFlipCards = () =>{

@@ -140,7 +140,7 @@
     } 
     #game-card{
       width: 150px !important;
-      height: max-content;
+      height: 150px;
       box-shadow: 0 6px 15px rgb(187, 186, 186);
       
     }
@@ -173,21 +173,14 @@
       grid-gap: 10px;
     }
     #frontCard {
-      width: 30%;
+      width: 40%;
     }
     #backCard {
-      width: 30%;
+      width: 40%;
     } 
     #game-card{
       width: 200px;
-      height: max-content;
+      height: 180px;
       box-shadow: 0 6px 15px rgb(187, 186, 186);
-      
     }
-    .card__face--front img {
-      width: 100%;
-    } 
-    .card__face--back img {
-      width: 80%;
-    } 
   }
