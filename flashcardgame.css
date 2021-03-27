@@ -34,9 +34,9 @@
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
-    margin: 50px;
+    margin-top: 50px;
+    padding: 0;
     justify-content: center;
-    perspective: 500px;
     list-style-type: none; 
 }
 
@@ -55,7 +55,6 @@
 
   .card__face--back img {
     width: 60%;
-    
   }
 
   #game-card{
@@ -125,12 +124,70 @@
     .game-container {
       margin-top: 2.5em;
    }
-   .title {
+    .title {
     font-size: 50px;
+   }
+    .card-container{
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      grid-gap: 10px;
+    }
+    #frontCard {
+      width: 30%;
+    }
+    #backCard {
+      width: 30%;
+    } 
+    #game-card{
+      width: 150px !important;
+      height: max-content;
+      box-shadow: 0 6px 15px rgb(187, 186, 186);
+      
+    }
+    .card__face--front img {
+      width: 100%;
+    } 
+    .card__face--back img {
+      width: 80%;
+    } 
   }
+  @media only screen and (max-width: 1050px) {
+    .game-info-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      font-size: 1.5em;
+      width: 60%;
+      text-shadow: 1px 1px rgb(114, 113, 113);
+   }
+    .game-container {
+      margin-top: 2.5em;
+   }
+    .title {
+    font-size: 50px;
+   }
+    .card-container{
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      grid-gap: 10px;
+    }
+    #frontCard {
+      width: 30%;
+    }
+    #backCard {
+      width: 30%;
+    } 
+    #game-card{
+      width: 200px;
+      height: max-content;
+      box-shadow: 0 6px 15px rgb(187, 186, 186);
+      
+    }
+    .card__face--front img {
+      width: 100%;
+    } 
+    .card__face--back img {
+      width: 80%;
+    } 
   }
-  @media only screen and (max-width: 1400px) {
-  }
-  @media only screen and (max-width: 1400px) {
-  }
- 

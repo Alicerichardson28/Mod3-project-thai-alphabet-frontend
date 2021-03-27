@@ -59,6 +59,7 @@ shuffleDeck.map(card =>{
   frontCardImg.id = "frontCard"
   frontCardImg.src = "./picture/couple.jpg"
   backCardImg.src = card.image_url
+  backCardImg.id = "backCard"
 
   li.addEventListener('click',()=>{
       li.classList.toggle('flip') 
@@ -131,48 +132,6 @@ const timer = document.querySelector('#time-remaining')
       startGame()
       }
     },1000)
-
-
-  // // display card and shuffleDeck
-  //   const gameCardContainer= document.querySelector('.card-container')
-  //   gameCardContainer.innerHTML =''
-
-  //   let shuffleDeck = shuffle(deck)
-  //   cardDesk = shuffleDeck.map(card =>{
-      
-  //     const cardFace = document.createElement('div')
-  //     const cardBack = document.createElement('div')
-  //     const li = document.createElement('li')
-  //     const frontCardImg = document.createElement('img')
-  //     const backCardImg = document.createElement('img')
-
-
-
-  //     li.dataset.letter = card.letter
-  //     li.id = "game-card"
-  //     cardFace.className = "card__face card__face--front"
-  //     cardBack.className = "card__face card__face--back"
-  //     frontCardImg.id = "frontCard"
-  //     frontCardImg.src = "./picture/couple.jpg"
-  //     backCardImg.src = card.image_url
-  
-  //     li.addEventListener('click',()=>{
-  //         li.classList.toggle('flip') 
-  //         li.classList.add('disabled') 
-  //         openedCards.push(li)
-  //         if (openedCards.length === 2){
-  //           if (openedCards[0].dataset.letter === openedCards[1].dataset.letter){
-  //             matchedCard()
-  //           }else{
-  //             unFlipCards();
-  //           }
-  //         } 
-  //       })
-  //       cardFace.appendChild(frontCardImg)
-  //       cardBack.appendChild(backCardImg)
-  //       li.append(cardFace, cardBack)
-  //       gameCardContainer.appendChild(li)
-  //     })
   }
 
 
