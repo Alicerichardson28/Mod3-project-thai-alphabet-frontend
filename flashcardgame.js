@@ -105,7 +105,7 @@ const matchedCard = () =>{
     openedCards[0].classList.add("match")
       openedCards[1].classList.add("match")
       openedCards = [] 
-    if (matchedCards.length === 16){
+    if (matchedCards.length === 2){
       setTimeout(() => window.location.href ="./winnerpage.html",1100)
     }
   },1100);
