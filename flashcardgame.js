@@ -106,7 +106,7 @@ const matchedCard = () =>{
       openedCards[1].classList.add("match")
       openedCards = [] 
     if (matchedCards.length === 16){
-      setTimeout(() => window.location.href ="./winnerPage.html",1100)
+      setTimeout(() => window.location.href ="https://thai-alphabet-flashcard.web.app/winnerPage.html",1100)
     }
   },1100);
   }
