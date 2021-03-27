@@ -146,3 +146,18 @@
     grid-gap:45px;
   } 
 }
+@media only screen and (max-width: 1400px) {
+  .button {
+    width: 80%;
+    padding-left: 750px;
+    padding-top: 180px;
+  }
+  #nextPageButt a {
+    font-size: 14px;
+  }
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap:45px;
+  } 
+}
